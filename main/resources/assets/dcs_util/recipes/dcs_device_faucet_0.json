@@ -1,0 +1,23 @@
+{
+ "type": "forge:ore_shaped",
+ "pattern": [
+  " Y ",
+  "XXX",
+  "X  "
+ ],
+ "key": {
+  "X": {
+   "type": "forge:ore_dict",
+   "ore": "ingotSteel"
+  },
+  "Y": {
+   "type": "forge:ore_dict",
+   "ore": "gearSteel"
+  }
+ },
+ "result": {
+  "item": "dcs_util:dcutil_faucet",
+  "count": 1,
+  "data": 0
+ }
+}

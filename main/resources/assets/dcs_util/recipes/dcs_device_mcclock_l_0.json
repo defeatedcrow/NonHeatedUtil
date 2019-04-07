@@ -1,0 +1,23 @@
+{
+ "type": "forge:ore_shaped",
+ "pattern": [
+  " X ",
+  "XYX",
+  " X "
+ ],
+ "key": {
+  "X": {
+   "type": "forge:ore_dict",
+   "ore": "ingotGold"
+  },
+  "Y": {
+   "item": "minecraft:clock",
+   "data": 0
+  }
+ },
+ "result": {
+  "item": "dcs_util:dcutil_mcclock_l",
+  "count": 1,
+  "data": 0
+ }
+}

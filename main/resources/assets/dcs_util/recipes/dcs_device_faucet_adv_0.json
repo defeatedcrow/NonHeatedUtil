@@ -1,0 +1,22 @@
+{
+ "type": "forge:ore_shaped",
+ "pattern": [
+  "X",
+  "Y"
+ ],
+ "key": {
+  "X": {
+   "type": "forge:ore_dict",
+   "ore": "gemDiamond"
+  },
+  "Y": {
+   "item": "dcs_util:dcutil_faucet",
+   "data": 0
+  }
+ },
+ "result": {
+  "item": "dcs_util:dcutil_faucet_adv",
+  "count": 1,
+  "data": 0
+ }
+}

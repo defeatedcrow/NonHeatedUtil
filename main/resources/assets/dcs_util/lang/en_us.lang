@@ -1,0 +1,38 @@
+
+## item
+
+item.dcutil_steel_gear.name=Steel Crow Gear
+item.dcutil_steel_ingot.name=Steel Ingot
+item.dcutil_flowerpot_brown.name=Flower Pot
+item.dcutil_cushion_gray.name=Big Cushion for the Lazy Mobs
+
+## block
+
+tile.dcutil_ladder_steel.name=Steel Ladder
+tile.dcutil_realtimeclock_l.name=Real Time Big Clock
+tile.dcutil_mcclock_l.name=Big Clock
+tile.dcutil_faucet.name=Faucet
+tile.dcutil_faucet_adv.name=Infinity Water Faucet
+tile.dcutil_ibc.name=IBC Fluid Container
+tile.dcutil_hopper_filter.name=Filter Hopper
+tile.dcutil_hopper_fluid.name=Fluid Hopper
+tile.dcutil_monitor_rs.name=Remote RS Lamp
+tile.dcutil_monitor_cm.name=Remote Comparator Lamp
+
+## tip
+
+dcs.tip.hopper_f=One item remains in the each slot. It works like an item filter.
+dcs.tip.hopper_flu1=Fill and drain the inserted fluid item.
+dcs.tip.hopper_flu2=Transport liquid from top to bottom.
+dcs.tip.hopper_flu3=When it's at the feet of a cow, it milk the cow.
+dcs.tip.monitor=Display data of target device.
+
+## gui
+
+dcs.gui.device.hopper.filter=Filter Hopper
+dcs.gui.device.hopper.fluid=Fluid Hopper
+
+## entities
+
+entity.dcutil.flowerpot.name=Flower Pot
+entity.dcutil.cushion.name=Big Cushion for the lazy mobs

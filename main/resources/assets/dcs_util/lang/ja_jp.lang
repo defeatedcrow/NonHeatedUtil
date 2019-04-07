@@ -1,0 +1,34 @@
+
+## item
+
+item.dcutil_steel_gear.name=鋼鉄のカラスギア
+item.dcutil_steel_ingot.name=鋼鉄インゴット
+item.dcutil_flowerpot_brown.name=花瓶
+item.dcutil_cushion_gray.name=モブをダメにするクッション
+
+## block
+
+tile.dcutil_ladder_steel.name=鋼のはしご
+tile.dcutil_realtimeclock_l.name=リアルタイム大時計
+tile.dcutil_mcclock_l.name=大時計
+tile.dcutil_faucet.name=蛇口
+tile.dcutil_faucet_adv.name=無限水源蛇口
+tile.dcutil_ibc.name=IBCタンク
+tile.dcutil_hopper_filter.name=フィルターホッパー
+tile.dcutil_hopper_fluid.name=液体ホッパー
+tile.dcutil_monitor_rs.name=遠隔レッドストーンランプ
+tile.dcutil_monitor_cm.name=遠隔コンパレータランプ
+
+## tip
+
+dcs.tip.hopper_f=各スロットにアイテムが1個ずつ残り、アイテムフィルターのように機能します。
+dcs.tip.hopper_flu1=液体容器アイテムを充填または開封します。
+dcs.tip.hopper_flu2=真上の液体タンクから真下の液体タンクに液体を輸送します。
+dcs.tip.hopper_flu3=近くに牛がいる時、(液体ミルクが追加されている場合のみ)ミルクを集めます。
+dcs.tip.monitor=登録先のブロックの情報を表示します。
+
+## gui
+
+dcs.gui.device.hopper.filter=フィルターホッパー
+dcs.gui.device.hopper.fluid=液体ホッパー
+

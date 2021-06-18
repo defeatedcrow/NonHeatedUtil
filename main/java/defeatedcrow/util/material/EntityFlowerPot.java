@@ -19,9 +19,6 @@ import net.minecraftforge.common.IPlantable;
 
 public class EntityFlowerPot extends DCEntityBase {
 
-	private static final DataParameter<ItemStack> FLOWER = EntityDataManager.<ItemStack>createKey(EntityFlowerPot.class,
-			DataSerializers.ITEM_STACK);
-
 	public EntityFlowerPot(World worldIn) {
 		super(worldIn);
 	}
@@ -33,6 +30,9 @@ public class EntityFlowerPot extends DCEntityBase {
 	public EntityFlowerPot(World worldIn, double posX, double posY, double posZ, @Nullable EntityPlayer player) {
 		super(worldIn, posX, posY, posZ, player);
 	}
+
+	private static final DataParameter<ItemStack> FLOWER = EntityDataManager.<ItemStack>createKey(EntityFlowerPot.class,
+			DataSerializers.ITEM_STACK);
 
 	@Override
 	protected void entityInit() {

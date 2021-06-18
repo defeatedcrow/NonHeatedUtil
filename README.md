@@ -5,31 +5,31 @@ A Mod for Minecraft 1.12.2
 Please visit my new wiki: http://defeatedcrow.jp/modwiki/HeatAndClimate
 
 ## Introduction
-This is a mod being developed by @defeatedcrow. This mod requires HeatAndClimateLib.<br>  ‚±‚Ìmod‚Ídefeatedcrow‚ªì¬‚·‚éAHeatAndClimateLib‚ğ—˜—p‚µ‚½Minecraft—pMod‚Å‚·BHeatAndClimateLib‚ğ‘O’ñMod‚Æ‚µ‚Ä—v‹‚µ‚Ü‚·B<br> Œ»İ‚ÌŠJ”­ŠÂ‹«‚ÍMC1.12.1‚Å‚·B
+This is a mod being developed by @defeatedcrow. <br> ç¾åœ¨ã®é–‹ç™ºç’°å¢ƒã¯MC1.12.2ã§ã™ã€‚
 
 ## Current operating environment:
-- Minecraft 1.12.1  
+- Minecraft 1.12.2  
 - MinecraftForge 14.23.5.2768+  
    
 ## Licenses
-‚±‚Ìmod‚ÍˆÈ‰º‚Ìƒ‰ƒCƒZƒ“ƒX‚ÌŒ³‚ÅŒöŠJ‚³‚ê‚Ü‚·B <br>
+ã“ã®modã¯ä»¥ä¸‹ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã®å…ƒã§å…¬é–‹ã•ã‚Œã¾ã™ã€‚ <br>
 This mod is distributed under the following license:
 ### Code: All Rights Reserved
 #### Permissions
-- ƒ\[ƒXƒR[ƒh‚ğ‰ü•Ï‚µ‚½‚èA‚ ‚È‚½‚ÌmodƒvƒƒWƒFƒNƒg‚É—˜—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B<br>You can fork, modify, or use the code in your project.
-- ‚±‚Ìmod‚Ì”ñ‰ü•ÏƒpƒbƒP[ƒW‚ğmodpack‚É“¯«‚µ‚½‚èAƒ}ƒ‹ƒ`ƒvƒŒƒCƒT[ƒo[“à‚ÅÄ”z•z‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B<br>You can redistribute this mod's unmodified package to modpack or multiplayer server.
+- ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’æ”¹å¤‰ã—ãŸã‚Šã€ã‚ãªãŸã®modãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«åˆ©ç”¨ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚<br>You can fork, modify, or use the code in your project.
+- ã“ã®modã®éæ”¹å¤‰ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’modpackã«åŒæ¢±ã—ãŸã‚Šã€ãƒãƒ«ãƒãƒ—ãƒ¬ã‚¤ã‚µãƒ¼ãƒãƒ¼å†…ã§å†é…å¸ƒã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚<br>You can redistribute this mod's unmodified package to modpack or multiplayer server.
 
 #### Conditions
-- ’˜ìŒ Ò‚Ì•\¦ Copyright notice
-- ¤—p—˜—p‹Ö~ Commercial use prohibition
+- è‘—ä½œæ¨©è€…ã®è¡¨ç¤º Copyright notice
+- å•†ç”¨åˆ©ç”¨ç¦æ­¢ Commercial use prohibition
 
 #### Limitations
-- ‚±‚Ìmod‚ÍuŒ»ó‚Ì‚Ü‚Üv’ñ‹Ÿ‚³‚êAˆêØ‚Ì“®ì‚ğ•ÛØ‚µ‚Ü‚¹‚ñB<br>This mod is provided "as is" without warranty of any kind.
-- ìÒ‚¨‚æ‚Ñ’˜ìŒ Ò‚ÍA‚¢‚©‚È‚éê‡‚Å‚àA‚±‚Ìmod‚Ìg—p‚»‚Ì‘¼‚É‚æ‚Á‚Ä¶‚¶‚éÓ”C‚ğ•‰‚¢‚Ü‚¹‚ñB<br>In any case, the author or copyright holder is not responsible for any claims, damages or other liabilities arising out of this mod or its use.
+- ã“ã®modã¯ã€Œç¾çŠ¶ã®ã¾ã¾ã€æä¾›ã•ã‚Œã€ä¸€åˆ‡ã®å‹•ä½œã‚’ä¿è¨¼ã—ã¾ã›ã‚“ã€‚<br>This mod is provided "as is" without warranty of any kind.
+- ä½œè€…ãŠã‚ˆã³è‘—ä½œæ¨©è€…ã¯ã€ã„ã‹ãªã‚‹å ´åˆã§ã‚‚ã€ã“ã®modã®ä½¿ç”¨ãã®ä»–ã«ã‚ˆã£ã¦ç”Ÿã˜ã‚‹è²¬ä»»ã‚’è² ã„ã¾ã›ã‚“ã€‚<br>In any case, the author or copyright holder is not responsible for any claims, damages or other liabilities arising out of this mod or its use.
 
 ### Assets: CC-BY-NC-SA 4.0 <br>
  https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 ## Function
 
-HeatAndClimate‚©‚çA‚¢‚­‚Â‚©‚ÌBlock‚ÆEntity‚ğ”²‚«o‚µ‚½’P”­Mod‚Å‚·B<br>It is a one-shot mod that selected some Block and Entity from HeatAndClimate.<br>
+HeatAndClimateã‹ã‚‰ã€ã„ãã¤ã‹ã®Blockã¨Entityã‚’æŠœãå‡ºã—ãŸå˜ç™ºModã§ã™ã€‚<br>It is a one-shot mod that selected some Block and Entity from HeatAndClimate.<br>

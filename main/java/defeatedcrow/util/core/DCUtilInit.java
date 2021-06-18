@@ -24,4 +24,11 @@ public class DCUtilInit {
 
 	public static Block monitorRS;
 	public static Block monitorCM;
+
+	public static Block scaffold;
+	public static Block pressureOlivine;
+
+	public static Block chestMetal;
+	public static Block chestMagnet;
+	public static Block chestVillage;
 }

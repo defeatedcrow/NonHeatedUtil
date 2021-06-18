@@ -4,7 +4,7 @@
     "parent":"",
     "logoFile":"",
     "credits":"defeatedcrow",
-    "dependencies":[""],
+    "dependencies":[],
     "modid":"dcs_util",
     "mcversion":"1.12.2",
     "screenshots":[],
@@ -14,7 +14,7 @@
     "name":"NonHeatedUtil-1.12.2",
     "url":"http://defeatedcrow.jp/modwiki/HeatAndClimate",
     "updateUrl":"",
-    "version":"1.12.1_1.0.0",
+    "version":"1.12.1_1.0.1",
     "requiredMods":[
       "Minecraft Forge1.12.2-14.23.5.2768+"
     ]

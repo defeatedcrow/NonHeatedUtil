@@ -118,7 +118,7 @@ public class BlockHopperFluid extends DCBlockContainerBase {
 			ItemStack heldItem = player.getHeldItem(hand);
 			if (!world.isRemote && tile != null && tile instanceof TileHopperFluid) {
 				if (player != null && hand == EnumHand.MAIN_HAND) {
-					if (!BlockIBC.onActivateDCTank(tile, heldItem, world, state, side, player)) {
+					if (!BlockIBC.onActivateTank(tile, heldItem, world, state, side, player)) {
 						player.openGui(DCUtilCore.instance, 0, world, pos.getX(), pos.getY(), pos.getZ());
 					} else {
 						world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.8F, 2.0F);
@@ -280,9 +280,9 @@ public class BlockHopperFluid extends DCBlockContainerBase {
 		tooltip.add("Transport Item (fluid container only): 1 item/5t");
 		tooltip.add("Transport Fluid : 200 mB/5t");
 		tooltip.add(TextFormatting.YELLOW.toString() + TextFormatting.BOLD.toString() + "=== Tips ===");
-		tooltip.add(I18n.format("dcs.tip.hopper_flu1"));
-		tooltip.add(I18n.format("dcs.tip.hopper_flu2"));
-		tooltip.add(I18n.format("dcs.tip.hopper_flu3"));
+		tooltip.add(I18n.format("dcutil.tip.hopper_flu1"));
+		tooltip.add(I18n.format("dcutil.tip.hopper_flu2"));
+		tooltip.add(I18n.format("dcutil.tip.hopper_flu3"));
 	}
 
 }

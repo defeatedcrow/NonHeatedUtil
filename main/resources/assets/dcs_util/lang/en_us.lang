@@ -18,21 +18,32 @@ tile.dcutil_hopper_filter.name=Filter Hopper
 tile.dcutil_hopper_fluid.name=Fluid Hopper
 tile.dcutil_monitor_rs.name=Remote RS Lamp
 tile.dcutil_monitor_cm.name=Remote Comparator Lamp
+tile.dcutil_pressure_olivine.name=Emerald Pressure Plate
+tile.dcutil_scaffold.name=Scaffold
+tile.dcutil_chest_metal.name=Metal Chest
+tile.dcutil_chest_magnet.name=Magnet Chest
+tile.dcutil_chest_village.name=Villager Chest
 
 ## tip
 
-dcs.tip.hopper_f=One item remains in the each slot. It works like an item filter.
-dcs.tip.hopper_flu1=Fill and drain the inserted fluid item.
-dcs.tip.hopper_flu2=Transport liquid from top to bottom.
-dcs.tip.hopper_flu3=When it's at the feet of a cow, it milk the cow.
-dcs.tip.monitor=Display data of target device.
+dcutil.tip.hopper_f=One item remains in the each slot. It works like an item filter.
+dcutil.tip.hopper_flu1=Fill and drain the inserted fluid item.
+dcutil.tip.hopper_flu2=Transport liquid from top to bottom.
+dcutil.tip.hopper_flu3=When it's at the feet of a cow, it milk the cow.
+dcutil.tip.monitor=Display data of target device.
+dcutil.tip.pressure_plate=Detects players and tamed mobs.
+dcutil.tip.chest=It can be carried it with the contents inside.
+dcutil.tip.m_chest=Collect surrounding drop items. (5x5x5 blocks)
+dcutil.tip.v_chest=It collects overflowing items from nearby villagers.
+dcutil.tip.scaffold=Hold the block and right click: Replace with this.
 
 ## gui
 
-dcs.gui.device.hopper.filter=Filter Hopper
-dcs.gui.device.hopper.fluid=Fluid Hopper
+dcutil.gui.hopper.filter=Filter Hopper
+dcutil.gui.hopper.fluid=Fluid Hopper
+dcutil.gui.chest=Metal Chest
 
 ## entities
 
-entity.dcutil.flowerpot.name=Flower Pot
+entity.dcutil.flower_pot.name=Flower Pot
 entity.dcutil.cushion.name=Big Cushion for the lazy mobs

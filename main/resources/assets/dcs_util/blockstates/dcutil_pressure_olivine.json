@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "dcs_util:dcutil_pressure_olivine_up" },
+        "powered=true": { "model": "dcs_util:dcutil_pressure_olivine_down" }
+    }
+}

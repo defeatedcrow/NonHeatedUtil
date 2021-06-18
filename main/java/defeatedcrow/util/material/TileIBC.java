@@ -2,9 +2,6 @@ package defeatedcrow.util.material;
 
 import javax.annotation.Nullable;
 
-import defeatedcrow.util.packet.DCUtilPacket;
-import defeatedcrow.util.packet.FluidIDRegisterDC;
-import defeatedcrow.util.packet.MessageFTank;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
@@ -23,24 +20,24 @@ public class TileIBC extends DCTileEntity implements ITagGetter, IFluidTile {
 	private int lastInT = 0;
 	private int count = 20;
 
-	@Override
-	protected void onServerUpdate() {
-		if (count > 0) {
-			count--;
-		} else {
-			boolean flag = false;
-			int l = inputT.getFluidAmount() + FluidIDRegisterDC.getID(inputT.getFluidType());
-			if (l != lastInT) {
-				flag = true;
-				lastInT = l;
-			}
-
-			if (flag) {
-				DCUtilPacket.INSTANCE.sendToAll(new MessageFTank(pos, FluidIDRegisterDC.getID(inputT.getFluidType()),
-						inputT.getFluidAmount()));
-			}
-		}
-	}
+	// @Override
+	// protected void onServerUpdate() {
+	// if (count > 0) {
+	// count--;
+	// } else {
+	// boolean flag = false;
+	// int l = inputT.getFluidAmount() + FluidIDRegisterDC.getID(inputT.getFluidType());
+	// if (l != lastInT) {
+	// flag = true;
+	// lastInT = l;
+	// }
+	//
+	// if (flag) {
+	// DCUtilPacket.INSTANCE.sendToAll(new MessageFTank(pos, FluidIDRegisterDC.getID(inputT.getFluidType()),
+	// inputT.getFluidAmount()));
+	// }
+	// }
+	// }
 
 	@Override
 	public boolean hasCapability(Capability<?> capability, EnumFacing facing) {

@@ -1,7 +1,7 @@
 package defeatedcrow.util.packet;
 
+import defeatedcrow.util.core.DCUtilCore;
 import defeatedcrow.util.material.TileMonitorBase;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
@@ -14,8 +14,8 @@ public class MHandlerMonitor implements IMessageHandler<MessageMonitor, IMessage
 	@Override
 	// IMessageHandlerのメソッド
 	public IMessage onMessage(MessageMonitor message, MessageContext ctx) {
-		EntityPlayer player = Minecraft.getMinecraft().player;
-		if (player != null) {
+		if (DCUtilCore.proxy.getPlayer() != null) {
+			EntityPlayer player = DCUtilCore.proxy.getPlayer();
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;

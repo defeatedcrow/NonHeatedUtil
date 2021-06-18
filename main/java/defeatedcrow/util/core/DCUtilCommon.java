@@ -2,18 +2,25 @@ package defeatedcrow.util.core;
 
 import defeatedcrow.util.inventory.ContainerHopperFilter;
 import defeatedcrow.util.inventory.ContainerHopperFluid;
+import defeatedcrow.util.inventory.ContainerLowChest;
 import defeatedcrow.util.inventory.GuiHopperFilter;
 import defeatedcrow.util.inventory.GuiHopperFluid;
+import defeatedcrow.util.inventory.GuiLowChest;
 import defeatedcrow.util.material.BlockFaucet;
 import defeatedcrow.util.material.BlockFaucet_SUS;
 import defeatedcrow.util.material.BlockHopperFilter;
 import defeatedcrow.util.material.BlockHopperFluid;
 import defeatedcrow.util.material.BlockIBC;
 import defeatedcrow.util.material.BlockMClock;
+import defeatedcrow.util.material.BlockMagnetChest;
+import defeatedcrow.util.material.BlockMetalChest;
 import defeatedcrow.util.material.BlockMonitorComparator;
 import defeatedcrow.util.material.BlockMonitorRedStone;
+import defeatedcrow.util.material.BlockPressurePlateDC;
 import defeatedcrow.util.material.BlockRClock;
+import defeatedcrow.util.material.BlockScaffold;
 import defeatedcrow.util.material.BlockSteelLadder;
+import defeatedcrow.util.material.BlockVillageChest;
 import defeatedcrow.util.material.DCItemBlockBase;
 import defeatedcrow.util.material.EntityBigCushion;
 import defeatedcrow.util.material.EntityFlowerPot;
@@ -21,16 +28,21 @@ import defeatedcrow.util.material.ItemCushionGray;
 import defeatedcrow.util.material.ItemFlowerPot;
 import defeatedcrow.util.material.ItemGearDC;
 import defeatedcrow.util.material.ItemIBC;
+import defeatedcrow.util.material.ItemLowChest;
 import defeatedcrow.util.material.ItemMonitor;
 import defeatedcrow.util.material.TileFaucet;
 import defeatedcrow.util.material.TileFaucet_SUS;
 import defeatedcrow.util.material.TileHopperFilter;
 import defeatedcrow.util.material.TileHopperFluid;
 import defeatedcrow.util.material.TileIBC;
+import defeatedcrow.util.material.TileLowChest;
 import defeatedcrow.util.material.TileMCClock_L;
+import defeatedcrow.util.material.TileMagnetChest;
+import defeatedcrow.util.material.TileMetalChest;
 import defeatedcrow.util.material.TileMonitorComparator;
 import defeatedcrow.util.material.TileMonitorRedStone;
 import defeatedcrow.util.material.TileRealtimeClock_L;
+import defeatedcrow.util.material.TileVillageChest;
 import defeatedcrow.util.packet.DCUtilPacket;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -95,6 +107,27 @@ public class DCUtilCommon implements IGuiHandler {
 		ForgeRegistries.BLOCKS.register(DCUtilInit.monitorCM);
 		ForgeRegistries.ITEMS.register(new ItemMonitor(DCUtilInit.monitorCM));
 
+		DCUtilInit.pressureOlivine = new BlockPressurePlateDC(Material.CLAY, false, "dcutil_pressure_olivine");
+		registerBlock(DCUtilInit.pressureOlivine, "dcutil_pressure_olivine");
+
+		DCUtilInit.scaffold = new BlockScaffold(Material.WOOD, "dcutil_scaffold");
+		registerBlock(DCUtilInit.scaffold, "dcutil_scaffold");
+
+		DCUtilInit.chestMetal = new BlockMetalChest(Material.ROCK, "dcutil_chest_metal");
+		registerChestBlock(DCUtilInit.chestMetal, "dcutil_chest_metal", DCUtilCore.MOD_ID);
+
+		DCUtilInit.chestMagnet = new BlockMagnetChest(Material.ROCK, "dcutil_chest_magnet");
+		registerChestBlock(DCUtilInit.chestMagnet, "dcutil_chest_magnet", DCUtilCore.MOD_ID);
+
+		DCUtilInit.chestVillage = new BlockVillageChest(Material.ROCK, "dcutil_chest_village");
+		registerChestBlock(DCUtilInit.chestVillage, "dcutil_chest_village", DCUtilCore.MOD_ID);
+
+	}
+
+	public static void registerChestBlock(Block block, String name, String modid) {
+		Block reg = block.setRegistryName(modid, name);
+		ForgeRegistries.BLOCKS.register(reg);
+		ForgeRegistries.ITEMS.register(new ItemLowChest(reg));
 	}
 
 	public void loadEntity() {
@@ -125,6 +158,12 @@ public class DCUtilCommon implements IGuiHandler {
 				"dcutil_te_monitor_rs"));
 		GameRegistry.registerTileEntity(TileMonitorComparator.class, new ResourceLocation("dcs_util",
 				"dcutil_te_monitor_cm"));
+		GameRegistry.registerTileEntity(TileMetalChest.class, new ResourceLocation("dcs_util",
+				"dcutil_te_chest_metal"));
+		GameRegistry.registerTileEntity(TileMagnetChest.class, new ResourceLocation("dcs_util",
+				"dcutil_te_chest_magnet"));
+		GameRegistry.registerTileEntity(TileVillageChest.class, new ResourceLocation("dcs_util",
+				"dcutil_te_chest_village"));
 	}
 
 	public static void registerBlock(Block block, String name) {
@@ -157,6 +196,8 @@ public class DCUtilCommon implements IGuiHandler {
 			return new ContainerHopperFilter((TileHopperFilter) tile, player);
 		if (tile instanceof TileHopperFluid)
 			return new ContainerHopperFluid((TileHopperFluid) tile, player);
+		if (tile instanceof TileLowChest)
+			return new ContainerLowChest((TileLowChest) tile, player);
 		return null;
 	}
 
@@ -170,6 +211,16 @@ public class DCUtilCommon implements IGuiHandler {
 			return new GuiHopperFilter((TileHopperFilter) tile, player);
 		if (tile instanceof TileHopperFluid)
 			return new GuiHopperFluid((TileHopperFluid) tile, player);
+		if (tile instanceof TileLowChest)
+			return new GuiLowChest((TileLowChest) tile, player);
+		return null;
+	}
+
+	public EntityPlayer getPlayer() {
+		return null;
+	}
+
+	public World getClientWorld() {
 		return null;
 	}
 

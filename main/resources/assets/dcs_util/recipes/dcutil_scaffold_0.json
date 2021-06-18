@@ -1,0 +1,23 @@
+{
+ "type": "forge:ore_shaped",
+ "pattern": [
+  "YXY",
+  "Y Y",
+  "YXY"
+ ],
+ "key": {
+  "X": {
+   "type": "forge:ore_dict",
+   "ore": "treeSapling"
+  },
+  "Y": {
+   "type": "forge:ore_dict",
+   "ore": "plankWood"
+  }
+ },
+ "result": {
+  "item": "dcs_util:dcutil_scaffold",
+  "count": 16,
+  "data": 0
+ }
+}

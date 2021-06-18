@@ -592,7 +592,7 @@ public class TileHopperFluid extends DCLockableTE implements IHopper, ISidedInve
 
 	@Override
 	public String getName() {
-		return "dcs.gui.device.hopper.fluid";
+		return "dcutil.gui.hopper.fluid";
 	}
 
 	@Override
@@ -607,7 +607,7 @@ public class TileHopperFluid extends DCLockableTE implements IHopper, ISidedInve
 
 	@Override
 	public String getGuiID() {
-		return "dcs.gui.device.hopper.fluid";
+		return "dcutil.gui.hopper.fluid";
 	}
 
 	@Override

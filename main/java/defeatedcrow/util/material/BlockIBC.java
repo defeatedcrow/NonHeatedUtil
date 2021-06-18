@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.google.common.collect.Lists;
 
 import defeatedcrow.util.core.DCUtilInit;
@@ -21,7 +23,6 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -51,22 +52,26 @@ public class BlockIBC extends DCTileBlock {
 			if (hand == EnumHand.MAIN_HAND) {
 
 				TileEntity tile = world.getTileEntity(pos);
-				if (!world.isRemote && tile instanceof TileIBC) {
-					if (!heldItem.isEmpty()) {
-						if (onActivateDCTank(tile, heldItem, world, state, side, player)) {
+				if (tile instanceof TileIBC) {
+					if (!world.isRemote && !heldItem.isEmpty()) {
+						if (onActivateTank(tile, heldItem, world, state, side, player)) {
 							world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.8F,
 									2.0F);
 						}
-					} else {
-						FluidStack f = ((TileIBC) tile).inputT.getFluid();
-						if (f != null) {
-							String name = f.getLocalizedName();
-							int i = f.amount;
-							String mes1 = "Stored Fluid: " + name + " " + i + "mB";
-							player.sendMessage(new TextComponentString(mes1));
-						}
 					}
+
+					FluidStack f = ((TileIBC) tile).inputT.getFluid();
+					if (f != null) {
+						String name = f.getLocalizedName();
+						int i = f.amount;
+						String mes1 = "中身の液体: " + name + " " + i + "mB";
+						LogManager.getLogger("defeatedcrow").info(mes1);
+					} else {
+						LogManager.getLogger("defeatedcrow").info("空っぽ");
+					}
+
 				}
+
 				return true;
 			}
 		}
@@ -169,7 +174,7 @@ public class BlockIBC extends DCTileBlock {
 		return true;
 	}
 
-	public static boolean onActivateDCTank(TileEntity tile, ItemStack item, World world, IBlockState state,
+	public static boolean onActivateTank(TileEntity tile, ItemStack item, World world, IBlockState state,
 			EnumFacing side, EntityPlayer player) {
 		if (!item.isEmpty() && tile != null && item.hasCapability(CapabilityFluidHandler.FLUID_HANDLER_ITEM_CAPABILITY,
 				side) && tile.hasCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, side)) {

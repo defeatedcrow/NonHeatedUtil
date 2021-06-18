@@ -296,7 +296,7 @@ public class TileHopperFilter extends DCLockableTE implements IHopper, ISidedInv
 
 	@Override
 	public String getName() {
-		return "dcs.gui.device.hopper.filter";
+		return "dcutil.gui.hopper.filter";
 	}
 
 	@Override
@@ -311,7 +311,7 @@ public class TileHopperFilter extends DCLockableTE implements IHopper, ISidedInv
 
 	@Override
 	public String getGuiID() {
-		return "dcs.gui.device.hopper.filter";
+		return "dcutil.gui.hopper.filter";
 	}
 
 	@Override

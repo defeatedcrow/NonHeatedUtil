@@ -17,18 +17,29 @@ tile.dcutil_ibc.name=IBCタンク
 tile.dcutil_hopper_filter.name=フィルターホッパー
 tile.dcutil_hopper_fluid.name=液体ホッパー
 tile.dcutil_monitor_rs.name=遠隔レッドストーンランプ
-tile.dcutil_monitor_cm.name=遠隔コンパレータランプ
+tile.dcutil_monitor_cm.name=遠隔コンパレーターランプ
+tile.dcutil_pressure_olivine.name=エメラルドの感圧板
+tile.dcutil_scaffold.name=足場ブロック
+tile.dcutil_chest_metal.name=メタルチェスト
+tile.dcutil_chest_magnet.name=マグネットチェスト
+tile.dcutil_chest_village.name=村人チェスト
 
 ## tip
 
-dcs.tip.hopper_f=各スロットにアイテムが1個ずつ残り、アイテムフィルターのように機能します。
-dcs.tip.hopper_flu1=液体容器アイテムを充填または開封します。
-dcs.tip.hopper_flu2=真上の液体タンクから真下の液体タンクに液体を輸送します。
-dcs.tip.hopper_flu3=近くに牛がいる時、(液体ミルクが追加されている場合のみ)ミルクを集めます。
-dcs.tip.monitor=登録先のブロックの情報を表示します。
+dcutil.tip.hopper_f=各スロットにアイテムが1個ずつ残り、アイテムフィルターのように機能します。
+dcutil.tip.hopper_flu1=液体容器アイテムを充填または開封します。
+dcutil.tip.hopper_flu2=真上の液体タンクから真下の液体タンクに液体を輸送します。
+dcutil.tip.hopper_flu3=近くに牛がいる時、(液体ミルクが追加されている場合のみ)ミルクを集めます。
+dcutil.tip.monitor=登録先のブロックの情報を表示します。
+dcutil.tip.pressure_plate=プレイヤーと飼いならされたモブにのみ反応します。
+dcutil.tip.chest=中身が入ったまま持ち運びできます。
+dcutil.tip.m_chest=5x5x5ブロックの範囲のドロップアイテムを集めます。
+dcutil.tip.v_chest=近くにいる村人のあふれた荷物を預かります。
+dcutil.tip.scaffold=建材を持って右クリックすると、設置済みの足場ブロックと一括で入れ替えます。
 
 ## gui
 
-dcs.gui.device.hopper.filter=フィルターホッパー
-dcs.gui.device.hopper.fluid=液体ホッパー
+dcutil.gui.hopper.filter=フィルターホッパー
+dcutil.gui.hopper.fluid=液体ホッパー
+dcutil.gui.chest=メタルチェスト
 
